@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+  <script type="module" crossorigin src="/assets/index-9e792c82.js"></script>
+  <link rel="stylesheet" href="/assets/index-9d38ef00.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header-navigate">
+          <button class="navigation__btn navigation__btn_left"></button>
+          <button class="navigation__btn navigation__btn_right"></button>
+        </div>
+        <div class="header__profile rounding-50">
+          <img class="header__profile_avatar rounding-50" src="/assets/images/avatar.png">
+          <a class="header__profile_user-name" href="#" title="Julita Gomez">Julita Gomez</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <p class="hero__untitle body-text-regular">Playlist</p>
+        <h1 class="hero__title title">Top songs of the world</h1>
+        <p class="hero__subtitle body-text-regular">Popular songs of Dua Lipa and many many others</p>
+      </div>
+    </section>
+    <div class="playlist">
+      <div class="container">
+        <div class="playlist__controls">
+          <button class="controls-btn play-btn rounding-50"></button>
+          <button class="controls-btn like-btn"></button>
+          <button class="controls-btn playlist-menu-btn"></button>
+        </div>
+        <ul class="playlist__songs">
+          <div class="playlist__songs_wrapper"></div>
+          <!--render song here-->
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__items">
+        <li class="mobile-menu__item">
+          <img class="mobile-menu__item-icon" src="/assets/icons/Home.svg" alt="home-icon">
+          <a class="mobile-menu__item-link" href="#">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <img class="mobile-menu__item-icon" src="/assets/icons/search.svg" alt="home-icon">
+          <a class="mobile-menu__item-link" href="#">Search</a>
+        </li>
+        <li class="mobile-menu__item">
+          <img class="mobile-menu__item-icon" src="/assets/icons/Library.svg" alt="home-icon">
+          <a class="mobile-menu__item-link" href="#">Library</a>
+        </li>
+        <li class="mobile-menu__item">
+          <img class="mobile-menu__item-icon" src="/assets/icons/Liked-songs.svg" alt="home-icon">
+          <a class="mobile-menu__item-link" href="#">Liked Song</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    
+  </footer>
+  <template class="template">
+      <li class="song-item rounding-17">
+      <div class="song-item__albom-info">
+        <div class="song-item__id body-text-regular"><span class="id"></span> <button class="play"></button></div>
+        <img class="song-item__cover rounding-8" src="" alt="cover albom">
+        <div class="song-item__track-info">
+          <span class="song-item__albom body-text-medium-sm"></span>
+          <p class="song-item__name"></p>
+        </div>
+      </div>
+
+      <div class="song-item__artist-info">
+        <span class="artist-title body-text-medium-sm">Artist</span>
+        <p class="artist-name"></p>
+      </div>
+
+      <div class="song-item__duration-info">
+        <span class="time-title body-text-medium-sm">Time</span>
+        <p class="duration"></p>
+      </div>
+
+      <div class="song-item__buttons">
+        <button class="like-btn song" data-like='false'></button>
+        <button class="playlist-menu-btn song"></button>
+      </div> 
+
+      <ul class="context-menu__items rounding-8">
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Add to queue</a></li>
+          <hr class="divider">
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Go to the track</a></li>
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Go to album</a></li>
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Show content authors</a></li>
+          <hr class="divider">
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Add to playlist</a></li>
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Show content authors</a><img src="./assets/icons/right-arrow.svg" alt="link-arrow"></li>
+          <hr class="divider">
+          <li class="context-menu__item"><a class="context-menu__item-link" href="#">Share</a><img src="./assets/icons/right-arrow.svg" alt="link-arrow"></li>
+      </ul>
+      </li>
+  </template>
+
+
+</body>
+
+</html>
