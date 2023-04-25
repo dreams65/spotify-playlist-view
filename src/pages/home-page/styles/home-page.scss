@@ -1,0 +1,77 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+.hero {
+    background-image: url('/assets/images/hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 434px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 50px;
+    margin-top: -88px;
+}
+
+.hero__title {
+    max-width: 338px;
+    width: 100%;
+    margin: 24px 0 0 0;
+}
+
+.hero__untitle, .hero__subtitle {
+    color: var(--color-text);
+    margin: 0;
+}
+
+.hero__subtitle {
+    margin-top: 24px;
+}
+
+.playlist__controls {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.controls-btn {
+    margin-left: 32px;
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.playlist__songs {
+    padding: 0;
+    margin-top: 32px;
+    position: relative;
+}
+
+.playlist__songs_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparentl;
+    display: none;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: url('/assets/images/hero.png');
+    }
+    .hero__subtitle {
+        font-size: 16px;
+        color: #BFBFBF;
+    }
+    .hero__title {
+        max-width: 220px;
+    }
+    .play-btn {
+        width: 55px;
+        height: 55px;
+    }
+}

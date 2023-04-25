@@ -1,0 +1,167 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "./styles/components/header/header.scss";
+@import "./../pages/home-page/styles/home-page.scss";
+
+@import "./styles/components/btn/play-btn.scss";
+@import "./styles/components/btn/like-btn.scss";
+@import "./styles/components/btn/playlist-menu-btn.scss";
+@import "./styles/components/song-item/song-item.scss";
+@import "./styles/components/divider/divider.scss";
+@import "./styles/components/mobile-menu/mobile-menu.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  background-color: #121212;
+}
+
+p {
+  color: var(--color-on-surface);
+}
+
+.container {
+  max-width: 1340px;
+  width: inherit;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+// fonts 
+
+.title {
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+.body-text-regular {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.body-text-bold {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.body-text-medium {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.body-text-bold-sm {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.body-text-medium-sm {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -4px;
+  }
+  
+  .body-text-bold {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  .body-text-medium {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -4px;
+  }
+  
+  .body-text-bold-sm {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  html, body {
+    overflow-x: hidden;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -4%;
+  }
+  
+  .body-text-bold {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  .body-text-medium {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -4px;
+  }
+  
+  .body-text-bold-sm {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+}
+
+// rounding & strokes
+
+.rounding-8 {
+  border-radius: 8px;
+}
+
+.rounding-17 {
+  border-radius: 17px;
+}
+
+.rounding-50 {
+  border-radius: 50px;
+}
+
+
+// buttons 
+
+.navigation__btn {
+  width: 46px;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 53.3px;
+  cursor:not-allowed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+}
+
+.navigation__btn_right {
+  background-image: url('/assets/icons/right-arrow.svg');
+}
+
+.navigation__btn_left {
+  background-image: url('/assets/icons/right-arrow.svg');
+  transform: rotateZ(180deg);
+}

@@ -1,0 +1,18 @@
+.playlist-menu-btn{
+    width: 59px;
+    height: 59px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('/assets/icons/more-menu-vertical-line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.playlist-menu-btn.song {
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    margin-left: 18px;
+}

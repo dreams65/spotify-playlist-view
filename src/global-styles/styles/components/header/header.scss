@@ -1,0 +1,42 @@
+.header {
+    padding: 19px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+
+
+    & &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & &__profile {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        min-width: 177px;
+        padding: 3px;
+
+        .header__profile_user-name {
+            margin-left: 12px;
+            text-decoration: none;
+            color: var(--color-text);
+        }
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .header__profile {
+        display: none;
+    }
+
+    .navigation__btn_right {
+        display: none;
+    }
+
+}

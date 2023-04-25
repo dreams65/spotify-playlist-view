@@ -1,0 +1,30 @@
+.like-btn {
+    width: 59px;
+    height: 59px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('/assets/icons/heart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.like-btn[data-like='true'] {
+    background-image: url('/assets/icons/heart-active.svg');
+    width: 59px;
+    height: 59px;
+}
+
+.like-btn.song {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.like-btn.song[data-like='true'] {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-image: url('/assets/icons/heart-active.svg');
+}

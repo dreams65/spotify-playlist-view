@@ -1,0 +1,12 @@
+.play-btn {
+    width: 59px;
+    height: 59px;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    background-image: url('/assets/icons/play-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 21px;
+    padding: 0;
+}
