@@ -3,7 +3,7 @@
 
 import '../global-styles/style.scss'
 
-let endpoint = '/assets/json/data.json';
+let endpoint = 'https://dreams65.github.io/spotify-playlist-view/assets/json/data.json';
 let templateSong = document.querySelector('.template');
 let playList = document.querySelector('.playlist__songs');
 let playListWrapper = document.querySelector('.playlist__songs_wrapper');
